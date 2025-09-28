@@ -78,16 +78,26 @@ Error: red-600 (om nødvendig)
 function App() {
   return (
     <>
-      <div className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-zinc-50 p-6 shadow-lg outline outline-zinc-300/5 dark:bg-zinc-900 dark:shadow-none dark:-outline-offset-1 dark:outline-purple-500/10">
+      <div className="mx-auto flex max-w-sm items-center rounded-2xl bg-zinc-50 p-6 shadow-lg outline outline-zinc-300/5 dark:bg-zinc-900 dark:shadow-none dark:-outline-offset-1 dark:outline-purple-500/50">
         <div>
           <div className="text-xl font-medium text-zinc-900 dark:text-zinc-200">
-            Tailwind CSS test
+            <span className="text-purple-700 dark:text-purple-500">
+              Tailwind
+            </span>{" "}
+            CSS test
           </div>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Making sure Tailwind CSS works properly
+          <p className="text-zinc-600 dark:text-zinc-400 mt-5">
+            Making sure{" "}
+            <span className="text-purple-700 dark:text-purple-500">
+              Tailwind
+            </span>{" "}
+            CSS works properly
           </p>
         </div>
       </div>
+      <button className="text-white dark:text-white mt-5 bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-500 rounded-2xl p-4">
+        Test Button
+      </button>
     </>
   );
 }
