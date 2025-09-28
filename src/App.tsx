@@ -1,5 +1,57 @@
 import "./style/App.css";
 
+/* 
+Plan for portfølje;
+Home
+Projects samle-side
+Projects sider (:id)
+
+Home trenger;
+Navbar
+  Buttons
+Landing Image Section
+  Parallax Img
+  3 * P
+Projects Section
+  H2/title
+  Project Cards
+    (H3/title, Img, P)
+  Button
+Skills Section
+  Grid of all programming skills
+About Section
+  H2/title
+  About "card"
+    P Bold
+    2 * P
+    Img
+Contact Section
+  H2/title 
+  P - Email, github
+  Button
+Footer
+  P
+  Button
+
+Projects;
+Navbar ^
+Landing Image Section
+  Parallax Img
+Highlighted Projects Section
+  Project Cards ^
+Other Projects Section
+  Project Cards ^
+Assignments Section
+  Project Cards ^
+Footer ^
+
+Individual Projects;
+Navbar ^
+Project Image
+H2 Project Title
+P Project details
+*/
+
 function App() {
   return (
     <>
