@@ -12,7 +12,10 @@ export default function Test() {
             <span className="text-purple-700 dark:text-blue-400">Tailwind</span>{" "}
             CSS works properly
           </p>
-          <a href="#" className="text-purple-500">
+          <a
+            href="#"
+            className="text-purple-500 hover:underline hover:text-purple-700"
+          >
             Test to see how A tags work
           </a>
           <img
@@ -22,7 +25,9 @@ export default function Test() {
           />
         </div>
       </div>
-      <button className="mt-5">Test Button</button>
+      <button className="mt-5 p-2 bg-purple-500 dark:bg-purple-700 text-white rounded-lg cursor-pointer hover:bg-purple-700 dark:hover:bg-purple-500 hover:-translate-y-0.5 hover:underline">
+        Test Button
+      </button>
       <ul className="mt-5">
         <li>UL Test 1</li>
         <li>UL Test 2</li>
