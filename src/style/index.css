@@ -1,42 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/fonts/RobotoSlab.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Saira";
+  src: url("/fonts/Saira.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  .font-roboto {
+    font-family: "RobotoSlab", serif, system-ui;
+  }
+  .font-saira {
+    font-family: "Saira", sans-serif, system-ui;
+  }
+}
+
+:root {
+  @apply text-zinc-200 bg-stone-900 leading-relaxed;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Saira", sans-serif, system-ui;
+  font-weight: 600;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* Standard rules from vite */
+  @apply m-0 flex items-center min-w-[320px] min-h-screen;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a:hover {
+  @apply text-purple-400 underline;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    @apply text-zinc-900 bg-zinc-50;
   }
   a:hover {
-    color: #747bff;
+    @apply text-purple-700;
   }
   button {
-    background-color: #f9f9f9;
+    @apply bg-purple-700;
   }
 }
