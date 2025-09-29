@@ -1,4 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import "./style/App.css";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Test from "./pages/Test";
+import Navbar from "./components/Navbar";
 
 /* 
 Plan for portfølje;
@@ -78,41 +83,12 @@ Error: red-600 (om nødvendig)
 function App() {
   return (
     <>
-      <div className="mx-auto flex max-w-sm items-center rounded-2xl bg-zinc-50 p-6 shadow-lg outline outline-zinc-300/5 dark:bg-zinc-900 dark:shadow-none dark:-outline-offset-1 dark:outline-purple-500/50">
-        <div>
-          <div className="font-roboto text-xl font-medium text-zinc-900 dark:text-zinc-200">
-            <span className="text-purple-700 dark:text-purple-500">
-              Tailwind
-            </span>{" "}
-            CSS test
-          </div>
-          <p className="text-zinc-600 dark:text-zinc-400 mt-5">
-            Making sure{" "}
-            <span className="text-purple-700 dark:text-purple-500">
-              Tailwind
-            </span>{" "}
-            CSS works properly
-          </p>
-          <a href="#" className="text-purple-500">
-            Test to see how A tags work
-          </a>
-          <img
-            src="src/assets/landing-img.jpg"
-            alt=""
-            style={{ borderRadius: "25px" }}
-          />
-        </div>
-      </div>
-      <button className="text-white dark:text-white mt-5 bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-500 rounded-2xl p-4">
-        Test Button
-      </button>
-      <ul>
-        <li>UL Test 1</li>
-        <li>UL Test 2</li>
-        <li>UL Test 3</li>
-        <li>UL Test 4</li>
-        <li>UL Test 5</li>
-      </ul>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
     </>
   );
 }
