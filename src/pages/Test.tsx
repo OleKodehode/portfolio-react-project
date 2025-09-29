@@ -22,9 +22,7 @@ export default function Test() {
           />
         </div>
       </div>
-      <button className="text-white dark:text-white mt-5 bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-500 rounded-2xl p-4">
-        Test Button
-      </button>
+      <button className="mt-5">Test Button</button>
       <ul className="mt-5">
         <li>UL Test 1</li>
         <li>UL Test 2</li>

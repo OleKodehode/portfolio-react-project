@@ -35,25 +35,8 @@ body {
   @apply m-0 flex items-center min-w-[320px] min-h-screen;
 }
 
-a,
-Link {
-  @apply text-purple-700;
-}
-
-a:hover,
-Link:hover {
-  @apply text-purple-400 underline;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     @apply text-zinc-900 bg-zinc-50;
-  }
-  a:hover,
-  Link:hover {
-    @apply text-purple-700;
-  }
-  button {
-    @apply bg-purple-700;
   }
 }
